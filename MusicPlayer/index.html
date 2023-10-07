@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="music-box">
+            
+            <h3 class="title" id = "name">STAY</h3>
+            <h4 class="artist" id ="singer">Justin Bieber</h4>
+            <img src="stay.png" alt="Falaknuma Das" id="songImg">
+            <audio src="music_stay.mp3" controls id ='song'></audio>
+
+            <div class="controls">
+                <div onclick="prevBtn()"><i class="fa fa-backward" aria-hidden="true"></i></div>
+                <div onclick="controls()" id ="btnContainer"><i class="fa-solid fa-play" id ="ctlIcon"></i></div>
+                <div onclick ="nextBtn()"><i class="fa fa-forward" aria-hidden="true"></i></div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.container{
+        background-image: url("wp11699753-spotify-songs-wallpapers.jpg");
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+        width:100%;
+        height:100vh;
+        overflow-y: hidden;
+
+}
+.music-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:90px auto;
+    border:4px solid rgb(12, 12, 12);
+    border-radius:25px;
+    width:450px;
+    color:white;
+    background-color: rgb(113, 123, 114);
+    line-height: 35px;
+
+}
+
+img{
+    width:50%;
+    height:25vh;
+    border:4px solid rgb(23, 24, 22);
+    margin:30px auto;
+
+}
+.controls{
+    margin:50px auto;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa-play, .fa-pause{
+    border-radius:50%;
+    background-color: rgb(224, 218, 218);
+    padding:20px;
+    color:black;
+}
+#btnContainer{
+    border:2px solid rgb(26, 22, 15);
+
+    border-radius:50% ;
+}
+
+.image{
+    animation: rotateImg 50s linear infinite;
+}
+#song{
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+@keyframes rotateImg{
+    0%{
+        transform :rotate(0deg);
+    }
+    
+
+    100%{
+        transform:rotate(360deg);
+    }
+}
